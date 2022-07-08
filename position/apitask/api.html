@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="api.css">
+    
+    <script src="api.js"></script>
+    
+    <title>List of Table</title>
+</head>
+
+
+<form class="example" action="action_page.php">
+  <input type="text" placeholder="Search.." name="search">
+  <button type="submit"><i class="fa fa-search"></i></button>
+</form>
+
+<body>
+    <div class="heading">
+    <h1>List Of Contents</h1>
+    
+</div>
+    <div class="outer-wrapper">
+    
+    <table id="emp-table">
+        <thead>
+            <th col-index = 1> ID
+                <select class="table-filter" onchange="filter_rows()">
+                    <option value="all"></option>
+                </select>
+            </th>
+            <th col-index = 2>First Name
+                <select class="table-filter" onchange="filter_rows()">
+                    <option value="all"></option>
+                </select>
+            </th>
+
+            <th col-index = 3>Team Division
+                <select class="table-filter" onchange="filter_rows()">
+                    <option value="all"></option>
+                </select>
+            </th>
+            <th col-index = 4>Team Name
+                <select class="table-filter" onchange="filter_rows()">
+                    <option value="all"></option>
+                </select>
+            </th>
+            
+            
+        </thead>
+        <tbody>
+            <!-- <tr>
+                <td>14</td>
+                <td>Ike</td>
+                <td>centrel</td>
+                <td>pacers</td>
+            </tr>
+            <tr>
+                <td>25</td>
+                <td>Ron</td>
+                <td>Atlantic</td>
+                <td>knicks</td>
+                
+            </tr>
+            <tr>
+                <td>47</td>
+                <td>Jabari</td>
+                <td>Atlantic</td>
+                <td>celtics</td>
+                
+            </tr>
+            <tr>
+                <td>67</td>
+                <td>Marshon</td>
+                <td>SouthWest</td>
+                <td>Grizzlies</td>
+                
+                
+            </tr>
+            <tr>
+                <td>71</td>
+                <td>Lorenzo</td>
+                <td>Atlantic</td>
+                <td>Raptors</td>
+                
+            </tr>
+            <tr>
+                <td>90</td>
+                <td>omri</td>
+                <td>southwest</td>
+                <td>Grizzlies</td>
+                
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Alex</td>
+                <td>NorthWest</td>
+                <td>thunders</td>
+               
+            </tr>
+            <tr>
+                <td>119</td>
+                <td>Tyler</td>
+                <td>NorthWest</td>
+                <td>NorthWest</td>
+               
+            </tr>
+            <tr>
+                <td>149</td>
+                <td>Keenan</td>
+                <td>central</td>
+                <td>pistons</td>
+                
+            </tr>
+            <tr>
+                <td>179</td>
+                <td>Marchin</td>
+                <td>pacific</td>
+                <td>clippers</td>
+                
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Andrew</td>
+                <td>pacific</td>
+                <td>warriors</td>
+               
+            </tr>
+            <tr>
+                <td>23</td>
+                <td>Amir</td>
+                <td>Atlantic</td>
+                <td>76ers</td>
+               
+            </tr>
+            <tr>
+                <td>29</td>
+                <td>Malachi</td>
+                <td>NorthWest</td>
+                <td>Jazz</td>
+               
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Zach</td>
+                <td>centrals</td>
+                <td>pistons</td>
+               
+            </tr>
+            <tr>
+                <td>26</td>
+                <td>kosta</td>
+                <td>pacific</td>
+                <td>kings</td>
+               
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+               
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+               
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+               
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+               
+            </tr>
+            
+            
+             -->
+
+        </tbody>
+    </table>
+    
+    
+</div>
+</div>
+</body>
+
+</html>
